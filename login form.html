@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLOTHING STORE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"  href="./style.css">
+    <link rel="stylesheet" href="./style2.css">
+</head> 
+<body>
+<section id="header">
+    <a href="#"><img src="./img/logo.png"  class="logo"></a>
+    <div>
+        <ul id="navbar">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contect.html">CONTECT</a></li>
+            <li id="lg-bag" class="icon"><a href="cart.html"><i class="fa-solid fa-cart-shopping  icon"></i></a></li>
+            <li id="lg-bag" class="icon"><a class="active" href="./login form.html"><i class="fa-solid fa-user"></i></a></li>
+            <a href="#" id="close"><i class="fa-duotone fa-solid fa-xmark"></i></a>
+        </ul>
+    </div>
+   <div id="mobile">
+       <a href="cart.html"><i class="fa-solid fa-cart-shopping  icon "></i></a>
+       <i id="bar" class="fa-solid fa-burger" ></i> 
+       <a href="./login form.html"><i class="fa-solid fa-user"></i></a>
+   </div>
+</section> 
+    <div class="background">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+             <button type="button" class="slide-btn" onclick="login()"> Login</button>
+             <button type="button" class="slide-btn" onclick="Register()"> Register</button>
+            </div>
+        <form class="input-group" id="login">
+            <input type="text" class="input-feild" placeholder="User Id" required>
+            <input type="password" class="input-feild" placeholder="Password" required>
+            <input type="checkbox" class="check-box"><span>Remember Password</span>
+            <button type="submit" class="sumbit-btn">Login</button>
+        </form>
+        <form class="input-group" id="Register">
+            <input type="text" class="input-feild" placeholder=" Enter Name" required>
+            <input type="email" class="input-feild" placeholder="Enter E-mail" required>
+            <input type="password" class="input-feild" placeholder="Password" required>
+            <input type="password" class="input-feild" placeholder=" Confirm Password" required>
+            <input type="checkbox" class="check-box" required><span>I agree to term & condition</span>
+            <button type="submit" class="sumbit-btn">Register</button>
+        </form>
+    </div>
+    </div>
+    <script>
+        var a = document.getElementById('login');
+        var b= document.getElementById('Register');
+        var c= document.getElementById('btn');
+         
+        function Register(){
+            a.style.left ="-410px"
+            b.style.left="60px"
+            c.style.left="110px"
+        }
+        function login(){
+            a.style.left ="50px"
+            b.style.left="450px"
+            c.style.left="0px"
+        }
+
+
+    </script>
+</body>
+</html>
